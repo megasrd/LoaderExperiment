@@ -59,7 +59,7 @@
 				// collada
 				var loader = new THREE.ColladaLoader( loadingManager );
 				loader.options.convertUpAxis = true;
-				loader.load("collada/stormtrooper/stormtrooper.dae", function ( collada ) {
+				loader.load("collada/demon/demon.dae", function ( collada ) {
 					elf = collada.scene;
 				} );
 				//
@@ -86,7 +86,6 @@
 			function animate() {
 				requestAnimationFrame( animate );
 				render();
-				stats.update();
 			}
 			function render() {
 
